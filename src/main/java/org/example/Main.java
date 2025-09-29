@@ -1,17 +1,32 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main {
+    public static void main(String[] args)
+    {
+        try
+        {
+        InputStreamReader isr = new InputStreamReader(System.in); //flujo de entrada
+        BufferedReader br = new BufferedReader(isr); //buffer de lectura
+        String linea=null;
+
+            while ((linea = br.readLine())!=null) //lee hasta que no haya mas lineas
+            {
+                String datos[] = linea.split(" "); //Separa los datos por espacios con el metodo .split
+                int numeros[] =new int [datos.length]; //Guarda los datos en un array de enteros
+                for(int i=0;i<numeros.length;i++) //Recorre el array
+                {
+                    numeros[i] =Integer.parseInt(datos[i]); //Convierte los datos a enteros, el casting es para convertir el String en int.
+                }
+            }
         }
+        catch (IOException ex) //Captura el error
+            {
+            System.out.println(ex.hashCode());
+            }
+
     }
 }
