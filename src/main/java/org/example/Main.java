@@ -21,6 +21,8 @@ public class Main {
                 {
                     numeros[i] =Integer.parseInt(datos[i]); //Convierte los datos a enteros, el casting es para convertir el String en int.
                 }
+                array.sort(numeros); //Ordena el array
+
             }
         }
         catch (IOException ex) //Captura el error
