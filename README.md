@@ -81,8 +81,7 @@ De este modo, generas 100 números aleatorios y los pasas directamente al módul
 
 ## 📝 Licencia / Contribución
 
-Indica aquí tu licencia preferida (MIT, GPL, etc.).  
-También puedes agregar una sección **Contribuciones** para describir cómo otros pueden aportar.
+Ángel Japón Castañeda
 
 ---
 
