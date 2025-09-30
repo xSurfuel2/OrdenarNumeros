@@ -1,6 +1,6 @@
 # 🧮 OrdenarNumeros
 
-Este proyecto es la **primera parte** del sistema: recibe una secuencia de números generados por la parte de “Aleatorios” y los ordena, devolviendo un archivo o salida ordenada.
+Este proyecto es la **segunda parte** del sistema: recibe una secuencia de números generados por la parte de “Aleatorios” y los ordena, devolviendo un archivo o salida ordenada.
 
 ---
 
@@ -25,7 +25,7 @@ OrdenarNumeros/
 
 ## 🎯 Objetivo
 
-1. Ser la **primera parte** del sistema completo: recibe números aleatorios ya generados, sean por consola, fichero o argumentos.  
+1. Ser la **segunda parte** del sistema completo: recibe números aleatorios ya generados, sean por consola, fichero o argumentos.  
 2. Aplicar un algoritmo de ordenación eficiente para devolver la secuencia ordenada.  
 3. Empaquetar todo en un **.jar ejecutable** con Maven, de modo que se pueda invocar simplemente con:
    ```bash
