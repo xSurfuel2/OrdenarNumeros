@@ -15,7 +15,7 @@
     </properties>
 
     <build>
-        <finalName>ordenarAleatorios</finalName>
+        <finalName>ordenarNumeros</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
