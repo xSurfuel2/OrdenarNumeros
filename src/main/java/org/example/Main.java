@@ -3,6 +3,7 @@ package org.example;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args)
@@ -21,8 +22,7 @@ public class Main {
                 {
                     numeros[i] =Integer.parseInt(datos[i]); //Convierte los datos a enteros, el casting es para convertir el String en int.
                 }
-                array.sort(numeros); //Ordena el array
-
+                Arrays.sort(numeros);
             }
         }
         catch (IOException ex) //Captura el error
