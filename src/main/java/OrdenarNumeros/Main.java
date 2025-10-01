@@ -23,6 +23,7 @@ public class Main {
                     numeros[i] =Integer.parseInt(datos[i]); //Convierte los datos a enteros, el casting es para convertir el String en int.
                 }
                 Arrays.sort(numeros);
+                System.out.println(Arrays.toString(numeros).replaceAll("[\\[\\],]","")); //Imprime el array ordenado, el replaceAll es para quitar los corchetes y las comas.
             }
         }
         catch (IOException ex) //Captura el error
